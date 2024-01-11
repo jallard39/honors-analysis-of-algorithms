@@ -1,0 +1,8 @@
+Jordan Allard
+
+WHAT: S[L,R] = min cost of multiplying the matrices AL, AL+1, ..., AR
+HOW: S[L,R] = 
+	0 								if L = R
+	min(k from L to R-1) of ( aL-1 * ak * aR + S[L,k] + S[k+1,R])	if L < R
+
+WHERE: S[1, n]
