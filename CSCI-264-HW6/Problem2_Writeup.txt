@@ -1,0 +1,19 @@
+Jordan Allard
+CSCI 264-01
+Homework 6
+
+HW6 Problem 2 Writeup
+
+a) Verbal Description
+
+
+b) Pseudocode
+
+
+c) Proof of Correctness
+
+
+d) Running Time Estimate
+
+
+e) Running Time Estimate Reasoning

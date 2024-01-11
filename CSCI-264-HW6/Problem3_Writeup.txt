@@ -1,0 +1,61 @@
+Jordan Allard
+CSCI 264-01
+Homework 6
+
+HW6 Problem 3 Writeup
+
+a) Verbal Description
+	This problem can be broken down into three separate maximum bipartite matching problems, one each for the hats, mittens, and jackets. The solution creates a super-source and a super-sink for each set of pairs (children to hats, children to mittens, children to jackets) and give each connection a flow of 1, then uses the Edmond-Karp algorithm to find the maximum flow from the super-source to the super-sink and determine if all points can be matched. The process is repeated for each item of clothing.
+
+b) Pseudocode
+	CreateGraph(V1, V2, E):
+		For i = 0 to V1.size:
+			For j = 0 to V2.size:
+				If (i, j) is in E: G[i][j] = 1
+				Else: G[i][j] = 0
+		For each vertex v in V1:
+			Let newEdge = (s, v)
+			Add newEdge to E
+			G[s][v] = 1
+		For each vertex v in V2:
+			Let newEdge = (v, t)
+			Add newEdge to E
+			G[v][t] = 1
+
+	MaxFlow (G=(V1, V2, E)):
+		Construct the residual graph RG = G
+		Let totalFlow = 0
+		While there exists an s-t path in RG:
+			Find an s-t path p using BFS
+			For every edge (u, v) in p:
+				RG[u][v] -= 1
+				RG[v][u] += 1
+			totalFlow += 1
+		Return RG and totalFlow
+
+	Given sets of children, hats, mittens, and jackets V1, V2, V3, and V4 respectively:
+		Let resultHat = MaxFlow(G=(V1, V2, E2))
+		Let resultMitten = MaxFlow(G=(V1, V3, E3))
+		Let resultJacket = MaxFlow(G=(V1, V4, E4))
+		If resultHat.totalFlow == resultMitten.totalFlow == resultJacket.totalFlow == size(V1):
+			Print YES
+			Print matches from resultHat.RG, resultMitten.RG, resultJacket.RG
+		Else: 
+			Print NO
+
+c) Proof of Correctness
+	If satisfactory pairings can be created between each child and item of clothing, for all children and all clothing items, then each child will be happy. Since the clothing items don't effect each other, they can be handled as separate problems. Matching each child to their preferences will create a bipartite graph, where if every vertex can find a pair then we know the combination is valid. By creating a super-source and super-sink and giving each path a weight of 1, every possible path across the bipartite devide must be taken to achieve the max flow, meaning that every vertex must have a pair. Thus, if the maximum flow equals capacity, then there is pairing that satisfies all children. If such a pairing can be found for all three articles of clothing, then the solution has ben found.
+
+d) Running Time Estimate
+	O(n^2 * (a + b + c))
+
+e) Running Time Estimate Reasoning
+	The running time for this algorithm can be broken down as follows:
+		Initialization --> O(n) + O(m)
+		Edmond-Karp for k = a, b, c:
+			Initialization --> O(n) + O(k)
+			Build residual graph --> O(n + k)
+			More initialization --> O(n) + O(k)
+			While loop --> O(n)
+			Inside the while loop --> O(1) + O(n) + O(n + k)
+	Thus the total running time for this algorithm is O(n) + O(m) + O(n^2 * a) + O(n^2 * b) + O(n^2 * c), which is equal to O(n^2(a + b + c)).
