@@ -1,0 +1,28 @@
+Jordan Allard
+CSCI 264-01
+Homework 3
+
+HW3 Problem 1 Writeup
+
+a) Verbal Description
+	The location with the minimum possible distance to each police car can be found with the median value of the x coordinates and the median value of the y coordinates. This algorithm implements randomized select to search for those median values, then calculates the minimum possible distance sum by adding the displacement of each police car's x and y coordinates from those of the target location.
+
+b) Pseudocode
+	Let X be the array of x coordinates
+	Let Y be the array of y coordinates
+	Find the median values of X and Y using the randomized Select algorithm
+	Let minSum = 0
+	For every (X[i], Y[i]) pair in X and Y:
+		minSum += abs(X[i] - median value of X)
+		minSum += abs(Y[i] - median value of Y)
+	Return minSum
+
+c) Proof of Correctness
+	Using the median value as the target location will always produce the smallest distance sum because it guarantees that there will be an equal number of cars in either direction, because it appropriately handles the ratio of cars on either side of the median value by ensuring the shop is placed closer to the side with more values (if the coordinates are mostly low numbers with a few high numbers, the median value will place the shop closer to the lower values), and because it will reduce at least one distance to zero, as it will always pick a spot on which a car already exists. 
+	Since this problem takes place on a grid system and diagonal movement is not possible, x and y distances can be calculated separately and then added together to get the total distance: on a grid, there is always a minimum x displacement and y displacement to get from one point to another, which remains the same no matter what path is taken to get there. Thus, once the median values are found, the algorithm can calculate the minimum distance sum on the x-axis and the minimum distance sum on the y-axis and sum them together to get the total and always be correct. 
+
+d) Running Time Estimate
+	O(n)
+
+e) Running Time Estimate Reasoning
+	This algorithm uses the randomized Select algorithm to find the median, which we can assume has an expected running time of O(n). Once the data has been loaded (which in itself is an O(n) operation), the medians are selected, and the ideal locations are found, finding the minimum distance requires iterating through each (x,y) pair once more. Thus, the final estimated running time is O(n) + O(n) + O(n) = O(n).
