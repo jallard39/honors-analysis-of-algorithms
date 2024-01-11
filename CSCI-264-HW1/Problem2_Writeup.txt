@@ -1,0 +1,37 @@
+Jordan Allard
+CSCI 264-01
+Homework 1
+
+HW1 Problem 2 Writeup
+
+1) Pseudocode
+	Let n = the number of computers in the network
+	Let S = the set of all connections	
+		// This is the input
+	Let L = an array of linked lists	
+		// This is our adjacency list
+	Let C = an array of size n			
+		// This will store the number of connections
+	Let T = an empty array				
+		// This will store the results
+	Let v = n							
+		// The number of computers that still have connections
+	For every pair (c1, c2) in S:
+		Add c2 to L[c1]
+		Add c1 to L[c2]
+		C[c1], C[c2] += 1
+	While v > 0:
+		Find the index i of the maximum value in C
+		C[i] = 0
+		v -= 1
+		Add i to T
+		For every item k in L[i]:
+			If i is not in T && C[k] > 0:
+				C[k] -= 1
+				If C[k] <= 0:
+					v -= 1
+	Return T
+
+2) Running Time
+	The estimated running time of this algorithm is O(n^2). At worst, the while loop will run n times, and the for loop inside it will also run n times with the worst input. Thus, with the worst input the algorithm will run n x n times, which is O(n^2).
+

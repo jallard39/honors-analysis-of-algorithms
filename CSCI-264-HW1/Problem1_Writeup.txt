@@ -1,0 +1,31 @@
+Jordan Allard
+CSCI 264-01
+Homework 1
+
+HW1 Problem 1 Writeup
+
+Least Growth --> Most Growth
+(Imagine there is a <= sign between each line. Items on the same line are equivalence classes.)
+
+n^(-2), n^(1/log(n)), (1/2)^n
+7, 123456789
+log(log(n))
+log(n^3), log4(n), log n
+(log(n))^2
+sqrt(n), n^(1/2)
+n^(3/4)
+n + 5
+n^(4/3)
+n log(n)
+3^log(n)
+n^2, n^2 + (10^100)(n)(log(n)), 4^log(n)
+	Notes: 4^log(n) = 4^(log4(n)/log4(2)) = (4^log4(n))^(1/log4(2)) = n^(1/log4(2)) = n^2
+(n^2)log(n)
+n^4
+log(n)^log(n), n^log(log(n))
+2^n, n2^n
+4^n, 4^(n-1)
+4^(2n)
+n!
+n^n
+4^(n^2)
