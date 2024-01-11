@@ -1,0 +1,29 @@
+Jordan Allard
+CSCI 264-01
+Homework 0
+
+HW0 Problem 1 Writeup
+
+a) Verbal Description
+	Given a number n, this algorithm will iterate through every number from 1 to n-1 and prints the iteration to the screen, on its own line, if it is prime.
+
+b) Pseudocode
+	Given an input n
+	For every number i from 1 to n-1:
+		If i is prime:
+			Print i
+
+	To check that i is prime, need another algorithm:
+	For every number k from 2 to i/2:
+		If i%k == 0:
+			Return true
+	Return false
+
+c) Proof of Correctness
+	This algorithm will always be correct because it will always check every integer less than n. Thus, it will always print every prime number less than n.
+
+d) Running Time Estimate
+	O(n^2)
+
+e) Running Time Estimate Reasoning
+	Each part of the algorithm separately has a time complexity of O(n). When combined, the algorithm needs to run a loop up to i/2 times for every i less than n, making it exponential. 

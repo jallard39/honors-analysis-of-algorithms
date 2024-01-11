@@ -1,0 +1,27 @@
+Jordan Allard
+CSCI 264-01
+Homework 0
+
+HW0 Problem 2 Writeup
+
+a) Verbal Description
+	Given a list of numbers, this algorithm finds and prints the smallest two unique numbers. It starts by assuming that the first number is the smallest, then iterates through every number in the input. If it finds a number smaller than the current minimum, it sets that number to be the new current minimum and labels the old minimum the second smallest number.
+
+b) Pseudocode
+	Let smallest = a1 and secondSmallest be undefined
+	For every number k from a1 through an:
+		If k < smallest:
+			Let secondSmallest = smallest;
+			Let smallest = k;
+		Else if k < secondSmallest and k != smallest:
+			Let secondSmallest = k;
+	Print smallest and secondSmallest
+
+c) Proof of Correctness
+	Since this algorithm iterates through every number in the input, it will compare every number against the current smallest number it can find, guaranteeing that it will find the smallest number in the set when finished. Likewise, it also compares every number to the second smallest number, guaranteeing that it will find the second smallest number.
+
+d) Running Time Estimate
+	O(n)
+
+e) Running Time Estimate Reasoning
+	The estimated running time for this algorithm is linear because it performs the same static checks on every input, so increasing the number of inputs will only increase the computation by a static amount. 

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HW0-TestingSubmission", "HW0-TestingSubmission.vcxproj", "{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Writeups", "Writeups", "{EBEC764A-CEA4-41BB-91A4-FDC547E70634}"
+	ProjectSection(SolutionItems) = preProject
+		PrimesWriteup.txt = PrimesWriteup.txt
+		SmallestTwoWriteup.txt = SmallestTwoWriteup.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Debug|x64.ActiveCfg = Debug|x64
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Debug|x64.Build.0 = Debug|x64
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Debug|x86.ActiveCfg = Debug|Win32
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Debug|x86.Build.0 = Debug|Win32
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Release|x64.ActiveCfg = Release|x64
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Release|x64.Build.0 = Release|x64
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Release|x86.ActiveCfg = Release|Win32
+		{DF5CFC82-999A-48F4-A1C5-5EFDC617E553}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {583910BD-28D4-4F75-B8B6-22FB54C745BF}
+	EndGlobalSection
+EndGlobal
