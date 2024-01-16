@@ -1,0 +1,112 @@
+
+<!-- saved from url=(0084)https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/hw6_specs.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CSCI261/264 Algorithms, Fall 2022-23</title>
+</head>
+<body>
+
+<p>
+
+<b><font size="+3" color="darkblue">CSCI261-05/CSCI264: Homework 6</font></b><br><br>
+
+<b><font size="+2">Input/output specifications</font> (<i>before reading this, read the <a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/CSCI261_264_HW6_Fall2023-24.pdf">problem statements</a>!!!</i>):</b><br>
+<br><br>
+<b><font size="+2" color="blue">Problem 1</font></b><br>
+<br>
+Input specification: the first line contains n and m (the number of vertices and edges of the graph).
+The vertices are labeled with numbers 1, 2, ..., n.
+The first line is followed by m lines, each of these lines describes an edge.
+The i-th of these lines contains four numbers. The first two numbers specify the end-point vertices, the third number is the weight and the fourth number is either 0 or 1 (1 means the edge belongs to F, 0 means the edge is not in F).
+You may assume that n is not bigger than 10000 and the weights fit in double.
+<br><br>
+Output specification: the output contains one line with either the cost of a minimum-cost F-containing spanning tree, or -1 if no such spanning tree exists.
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/input-1.1">input-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/input-1.2">input-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/input-1.3">input-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/input-1.4">input-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/input-1.5">input-1.5</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/answer-1.1">answer-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/answer-1.2">answer-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/answer-1.3">answer-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/answer-1.4">answer-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/SpanTree/answer-1.5">answer-1.5</a>
+<br>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>SpanTree.java</tt> or <tt>SpanTree.cpp</tt>
+<br>
+
+
+<br><br>
+<b><font size="+2" color="blue">Problem 2</font></b><br>
+<br>
+Input specification: the first line contains n and m, the number of vertices and edges. The vertices are labeled with numbers 1, 2,..., n.
+Then m lines follow. The i-th line contains u, v, and w, specifying the i-th edge that goes from vertex u to vertex v, of weight w.
+You may assume that n is at most 10000 and that the weights fit in int.
+<br><br>
+Output specification: the first line contains the string "YES" if there exists a negative-weight cycle, otherwise it contains the string "NO".
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.1">input-2.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.2">input-2.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.3">input-2.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.4">input-2.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.5">input-2.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/input-2.7">input-2.7</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.1">answer-2.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.2">answer-2.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.3">answer-2.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.4">answer-2.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.5">answer-2.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/NegativeCycle/answer-2.7">answer-2.7</a>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>NegativeCycle.java</tt> or <tt>NegativeCycle.cpp</tt>
+<br>
+
+
+<br><br>
+<b><font size="+2" color="blue">Problem 3</font></b><br>
+<br>
+Input specification: the first line contains n, a, b, and c. We number the hats 1,...,a, the mitten pairs 1,...,b, and the jackets 1,...c.
+Then 3n lines follow. The i-th group of three lines specifies the preferences of the
+i-th child. The first of these lines specifies which hats the child finds acceptable: it contains a sequence of distinct numbers, all between 1,...,a,
+ended with the number 0. The second and third lines similarly specify the child's preferences for mitten pairs and for jackets, respectively.
+You may assume that n, a, b, and c are each at most 100.
+<br><br>
+Output specification: the first line contains the string "YES" if it is possible to find an acceptable hat, pair of mittens, and a jacket simultaneously
+for all children; otherwise the string is "NO".
+If the string is "YES", then n lines follow. The i-th line lists the hat, mitten pair, and jacket for the i-th child.
+(Notice that this part of the output is not necessarily unique. All correct outputs will be accepted for full credit.)
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/input-2.1">input-2.1</a>, 
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/input-2.2">input-2.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/input-2.3">input-2.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/input-2.4">input-2.4</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/answer-2.1">answer-2.1</a>, 
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/answer-2.2">answer-2.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/answer-2.3">answer-2.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw6/Daycare/answer-2.4">answer-2.4</a>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>Daycare.java</tt> or <tt>Daycare.cpp</tt>
+<br>
+
+
+
+</p></body></html>
