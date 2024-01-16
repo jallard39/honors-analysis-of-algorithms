@@ -1,0 +1,165 @@
+
+<!-- saved from url=(0084)https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/hw5_specs.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CSCI261/264 Algorithms, Fall 2022-23</title>
+</head>
+<body>
+
+<p>
+
+<b><font size="+3" color="darkblue">CSCI261-05/CSCI264: Homework 5</font></b><br><br>
+
+<b><font size="+2">Input/output specifications</font> (<i>before reading this, read the <a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/CSCI261_264_HW5_Fall2023-24.pdf">problem statements</a>!!!</i>):</b><br>
+
+<br><br>
+<b><font size="+2" color="blue">Problem 2</font></b><br>
+<br>
+Input specification: the first line contains n and m (the number of vertices and edges of the graph), separated by space.
+The vertices are labeled with numbers 1, 2, ..., n.
+Then m lines follow. The i-th of these lines contains two numbers representing the end-points of the i-th edge, separated by space.
+You may assume that n is at most 10000.
+<br><br>
+Output specification: output the smallest number of edges that need to be added to make the graph connected.
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.1">input-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.2">input-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.3">input-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.4">input-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.5">input-1.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.6">input-1.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.7">input-1.7</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.8">input-1.8</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/input-1.9">input-1.9</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.1">answer-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.2">answer-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.3">answer-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.4">answer-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.5">answer-1.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.6">answer-1.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.7">answer-1.7</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.8">answer-1.8</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/ConnectGraph/answer-1.9">answer-1.9</a>
+<br>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>ConnectGraph.java</tt> or <tt>ConnectGraph.cpp</tt>
+<br>
+
+
+<br><br>
+<b><font size="+2" color="blue">Problem 3</font></b><br>
+<br>
+Input specification: the first line contains n, the number of courses. The courses are labeled with numbers 1, 2,..., n.
+Then n lines follow. The i-th line lists the prerequisites in P<sub>i</sub>, separated by spaces, finished with number 0.
+You may assume that n is at most 100000 and every course has at most 100 prerequisites.
+<br><br>
+Output specification: the first line contains the number of courses in the longest prerequisite chain.
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/input-1.1">input-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/input-1.2">input-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/input-1.3">input-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/input-1.4">input-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/input-1.5">input-1.5</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/answer-1.1">answer-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/answer-1.2">answer-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/answer-1.3">answer-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/answer-1.4">answer-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/Prerequisites/answer-1.5">answer-1.5</a>
+<br>
+Explanation for the first output: The longest prerequisite chain is: 2-&gt;3-&gt;1-&gt;4-&gt;6, containing 5 courses.
+<br>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>Prerequisites.java</tt> or <tt>Prerequisites.cpp</tt>
+<br>
+
+
+<br><br>
+<b><font size="+2" color="blue">Problem 4</font></b><br>
+<br>
+Input specification: The first line contains the dimensions <i>a</i> and <i>b</i>.
+Then <i>a</i> lines follow, each contains a string of length <i>b</i> of symbols ".", "x", "1", and "2", where "1"
+stands for the initial location of thing One, "2" for thing Two, "." is an empty space that the
+things can move to, and "x" is a wall. Once thing One or Two moves from its initial location, the location becomes a ".".
+You may assume that <i>a,b</i> are at most 100.
+
+<br><br>
+Output specification: Output the smallest number of moves thing One and thing Two need to get out of the house;
+or the string STUCK if they cannot get out.
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.1">input-3.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.2">input-3.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.3">input-3.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.4">input-3.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.5">input-3.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.6">input-3.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/input-3.7">input-3.7</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.1">answer-3.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.2">answer-3.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.3">answer-3.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.4">answer-3.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.5">answer-3.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.6">answer-3.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/DoubleTrouble/answer-3.7">answer-3.7</a>
+<br>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>DoubleTrouble.java</tt> or <tt>DoubleTrouble.cpp</tt>
+<br>
+
+
+<br><br>
+<b><font size="+2" color="blue">Problem 5</font></b><br>
+<br>
+Input specification: the first line contains n and m (the number of vertices and edges of the graph), separated by a space.
+The vertices are labeled with numbers 1, 2, ..., n.
+The second line contains s and t, separated by a space.
+Then m lines follow. The i-th of these lines contains two numbers representing the end-points of the i-th edge, separated by a space.
+You may assume that n is at most 1000.
+<br><br>
+Output specification: output the number of shortest paths from s to t. You may assume that the number fits in int.
+
+<br>
+<br>
+Sample input:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.1">input-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.2">input-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.3">input-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.4">input-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.5">input-1.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.6">input-1.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/input-1.7">input-1.7</a>
+<br>
+Sample output:
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.1">answer-1.1</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.2">answer-1.2</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.3">answer-1.3</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.4">answer-1.4</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.5">answer-1.5</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.6">answer-1.6</a>,
+<a href="https://www.cs.rit.edu/~ib/Classes/CSCI261_03_Fall23-24/Homeworks/Hw5/NumPaths/answer-1.7">answer-1.7</a>
+<br>
+
+<br><br>
+<b>How to submit:</b> Name your file <tt>NumPaths.java</tt> or <tt>NumPaths.cpp</tt>
+<br>
+
+
+
+
+</p></body></html>
